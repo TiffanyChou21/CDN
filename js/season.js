@@ -1,6 +1,10 @@
 var stop, staticx;
+var now = new Date()
+var nowMonth = now.getMonth()
 var img = new Image();
-img.src = "https://cdn.jsdelivr.net/gh/TiffanyChou21/CDN/img/2.png"
+if (nowMonth <= 1 || nowMonth == 11) { img.src = "https://cdn.jsdelivr.net/gh/TiffanyChou21/CDN/img/flake.png" } else if (nowMonth >= 2 && nowMonth <= 4) { img.src = "https://cdn.jsdelivr.net/gh/TiffanyChou21/CDN/img/leave.png" } else if (nowMonth >= 5 && nowMonth <= 7) { img.src = "https://cdn.jsdelivr.net/gh/TiffanyChou21/CDN/img/flower.png" } else if (nowMonth >= 8 && nowMonth <= 10) { img.src = "https://cdn.jsdelivr.net/gh/TiffanyChou21/CDN/img/maple.png" }
+// img.src = "../img/leave.png"
+// "https://cdn.jsdelivr.net/gh/TiffanyChou21/CDN/img/2.png"
 
 
 function Sakura(x, y, s, r, fn) {
@@ -15,7 +19,7 @@ Sakura.prototype.draw = function(cxt) {
     var xc = 40 * this.s / 4;
     cxt.translate(this.x, this.y);
     cxt.rotate(this.r);
-    cxt.drawImage(img, 0, 0, 30 * this.s, 30 * this.s)
+    cxt.drawImage(img, 0, 0, 35 * this.s, 35 * this.s)
     cxt.restore();
 }
 Sakura.prototype.update = function() {
