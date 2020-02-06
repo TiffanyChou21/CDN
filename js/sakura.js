@@ -1,6 +1,6 @@
 var stop, staticx;
 var img = new Image();
-img.src = "../img/2.png"
+img.src = "https://cdn.jsdelivr.net/gh/TiffanyChou21/CDN/img/2.png"
 
 
 function Sakura(x, y, s, r, fn) {
