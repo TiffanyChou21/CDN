@@ -2,7 +2,7 @@ var stop, staticx;
 var now = new Date()
 var nowMonth = now.getMonth()
 var img = new Image();
-if (nowMonth <= 1 || nowMonth == 11) { img.src = "https://cdn.jsdelivr.net/gh/TiffanyChou21/CDN/img/flake.png" } else if (nowMonth >= 2 && nowMonth <= 4) { img.src = "https://cdn.jsdelivr.net/gh/TiffanyChou21/CDN/img/leave.png" } else if (nowMonth >= 5 && nowMonth <= 7) { img.src = "https://cdn.jsdelivr.net/gh/TiffanyChou21/CDN/img/flower.png" } else if (nowMonth >= 8 && nowMonth <= 10) { img.src = "https://cdn.jsdelivr.net/gh/TiffanyChou21/CDN/img/maple.png" }
+if (nowMonth <= 1 || nowMonth == 11) { img.src = "https://cdn.jsdelivr.net/gh/TiffanyChou21/CDN@latest/img/flake.png" } else if (nowMonth >= 2 && nowMonth <= 4) { img.src = "https://cdn.jsdelivr.net/gh/TiffanyChou21/CDN@latest/img/leave.png" } else if (nowMonth >= 5 && nowMonth <= 7) { img.src = "https://cdn.jsdelivr.net/gh/TiffanyChou21/CDN@latest/img/flower.png" } else if (nowMonth >= 8 && nowMonth <= 10) { img.src = "https://cdn.jsdelivr.net/gh/TiffanyChou21/CDN@latest/img/maple.png" }
 // img.src = "../img/leave.png"
 // "https://cdn.jsdelivr.net/gh/TiffanyChou21/CDN/img/2.png"
 
